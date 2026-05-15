@@ -1,2 +1,2 @@
 # wishlist-mistica
-Galeria com listas de desejo
+Gerenciador de desejos focado em curadoria visual e links de afiliados da Shopee.
