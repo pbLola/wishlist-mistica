@@ -6,7 +6,7 @@
 }
 body{
     background-color: #efead8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;;
     color: #2d2722;
     padding: 40px 20px;
     display: flex;
@@ -19,12 +19,14 @@ body{
     margin-bottom: 10px;
 }
 .cabecalho-principal h1{
+    font-family: 'Cinzel', serif;
     font-size: 2.5rem;
     color: #4a3e3d;
     letter-spacing: -1px;
     margin-bottom: 6px;
 }
 .cabecalho-principal p{
+    font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     color: #8c6d53;
     font-style: italic;
@@ -43,7 +45,7 @@ body{
 
 }
 #wishlist-form label{
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #5c534c;
     text-transform: uppercase;
@@ -56,7 +58,7 @@ body{
     border: 1px solid #d1c7bd;
     border-radius: 6px;
     background-color: #fafafa;
-    font-family: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 1rem;
     color: #2d2722;
     transition: all 0.3s ease;
@@ -91,21 +93,30 @@ button:hover{
 }
 .card-produto{
     background-color: #ffffff;
-    padding: 20px;
+    padding: 24px;
     border-radius: 8px;
     border-left: 5px solid #4a3e3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 12px;
     width: 100%;
-    min-height: 140px;
+    min-height: 180px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-produto:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(74, 62, 61, 0.12);
 }
 .card-produto h3{
+    font-family: 'Cinzel', serif;
     font-size: 1.2rem;
     color: #2d2722;
-    margin-bottom: 8px;
+    margin: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .card-produto p{
     font-size: 1rem;
