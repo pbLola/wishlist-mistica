@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efead8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2722;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.cabecalho-principal{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cabecalho-principal h1{
+    font-size: 2.5rem;
+    color: #4a3e3d;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+}
+.cabecalho-principal p{
+    font-size: 1.1rem;
+    color: #8c6d53;
+    font-style: italic;
+
+}
+#wishlist-form{
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+#wishlist-form label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5c534c;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: -6px;
+}
+#wishlist-form input{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1c7bd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #2d2722;
+    transition: all 0.3s ease;
+}
+#wishlist-form input:focus{
+    outline: none;
+    border-color: #4a3e3d;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(74, 62, 61, 0.1);
+}
+button{
+    background-color: #4a3e3d;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+button:hover{
+    background-color: #352b2a
+}
+#cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+
+}
+.card-produto{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #4a3e3d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    min-height: 140px;
+}
+.card-produto h3{
+    font-size: 1.2rem;
+    color: #2d2722;
+    margin-bottom: 8px;
+}
+.card-produto p{
+    font-size: 1rem;
+    color: #5c534c;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.card-produto a{
+    color: #8c6d53;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-bottom: 1px dashed #8c6d53;
+    transition: color 0.2s;
+}
+.card-produto a:hover{
+    color: #4a3e3d;
+    border-bottom-style: solid;
+}
+.card-produto h3,
+.card-produto p, 
+.card-produto  a{
+    display: block;
+    width: 100%;
+    margin: 0;
+    white-space: normal;
+}

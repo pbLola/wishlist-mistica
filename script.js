@@ -18,9 +18,9 @@ formulario.addEventListener('submit', function(evento){
 
     novoCard.classList.add('card-produto');
     novoCard.innerHTML = `
-    <h3>${nomeDigitado}</h3>
-    <p>R$ ${precoDigitado}</p>
-    <a href="${linkDigitado}" target="_blank">Ver Produtos</a>
+    <h3>🔮 ${nomeDigitado || 'Produto sem nome'}</h3>
+    <p>R$ ${precoDigitado || '0,00'}</p>
+    <a href="${linkDigitado || '#'}" target="_blank">Ver Produtos</a>
     `
 
     console.log("Nome do Produto:", nomeDigitado);
